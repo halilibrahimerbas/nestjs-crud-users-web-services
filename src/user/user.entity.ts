@@ -4,7 +4,6 @@ import { ApiProperty } from "@nestjs/swagger";
 @Entity()
 export class UserEntity {
   @PrimaryGeneratedColumn()
-  @ApiProperty()
   id: number;
 
   @Column({ type: "varchar", length: 200, nullable: false })
